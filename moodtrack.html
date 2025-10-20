@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodtracker</title>
+    <style>
+        .mood-tracker{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .mood-btn{
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            background: white;
+            transition: transform 0.2s;
+
+            .mood-btn:hover{
+                transform: scale(1.2);
+                border-color: #4caf50;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>How are u feeling today?</h2>
+    <div class="mood-tracker">
+        <button class="mood-btn" data-mood=""> </button>
+        <button class="mood-btn" data-mood=""> </button>
+        <button class="mood-btn" data-mood=""> </button>
+        <button class="mood-btn" data-mood=""> </button>
+        <button class="mood-btn" data-mood=""> </button>
+          <button class="mood-btn" data-mood=""> </button>
+    
+    </div>
+
+
+    <p id="mood-result">
+        
+    </p>
+</body>
+</html>
